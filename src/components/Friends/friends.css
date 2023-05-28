@@ -1,0 +1,52 @@
+@import '../../App.css';
+
+.friends {
+    width: 80%;
+    height: 411px;
+    background-color: var(--dark-30);
+    border-radius: 16px;
+    margin: 32px auto 0 auto;
+    padding: 24px 27px;
+}
+
+.friends-number {
+    display: flex;
+    justify-content: space-between;
+}
+
+.friends-amount {
+    font-size: 1rem;
+    color: var(--dark-10);
+    font-weight: 500;
+}
+
+.friends-all {
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.friends-list {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.friends-list_img {
+    width: 56px;
+}
+
+.friends-list_card {
+    margin-top: 32px;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.friends-list_name {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--dark-10);
+}
