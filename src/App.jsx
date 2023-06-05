@@ -5,6 +5,7 @@ import Perfil from './components/Perfil';
 import Edit from './components/Edit';
 import Friends from './components/Friends';
 import Description from './components/Description';
+import Community from './components/Community';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Edit />
       <Friends />
       <Description />
+      <Community />
     </>
   )
 }

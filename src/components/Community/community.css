@@ -1,0 +1,52 @@
+@import '../../App.css';
+
+.community {
+    width: 80%;
+    height: 411px;
+    background-color: var(--dark-30);
+    border-radius: 16px;
+    margin: 32px auto 32px auto;
+    padding: 24px 27px;
+}
+
+.community-number {
+    display: flex;
+    justify-content: space-between;
+}
+
+.community-amount {
+    font-size: 1rem;
+    color: var(--dark-10);
+    font-weight: 500;
+}
+
+.community-all {
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.community-list {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.community-list_img {
+    width: 56px;
+}
+
+.community-list_card {
+    margin-top: 32px;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.community-list_name {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--dark-10);
+}
