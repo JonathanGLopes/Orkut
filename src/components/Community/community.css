@@ -24,6 +24,7 @@
     color: var(--primary);
     font-size: 14px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .community-list {
@@ -35,6 +36,7 @@
 
 .community-list_img {
     width: 56px;
+    cursor: pointer;
 }
 
 .community-list_card {

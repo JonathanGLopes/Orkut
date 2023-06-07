@@ -24,6 +24,7 @@
     color: var(--primary);
     font-size: 14px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .friends-list {
@@ -35,6 +36,7 @@
 
 .friends-list_img {
     width: 56px;
+    cursor: pointer;
 }
 
 .friends-list_card {
