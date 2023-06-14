@@ -1,5 +1,6 @@
 import React from "react";
 
+import Card from "../Card";
 import './community.css';
 
 import imgCar from '../../img/comunidade/car.png';
@@ -15,7 +16,7 @@ import imgCoffee from '../../img/comunidade/coffee.png';
 
 export default function Community(){
     return(
-        <div className="community">
+        <Card className="community">
             <div className="community-number">
                 <span className="community-amount">Comunidade (42)</span>
                 <span className="community-all">Ver todos</span>
@@ -58,7 +59,7 @@ export default function Community(){
                     <span className="community-list_name">Cafeee</span>
                 </div>
             </section>
-        </div>
+        </Card>
 
     )
 }

@@ -1,9 +1,6 @@
-main {
+.card {
      margin: 40px auto 0 auto;
      padding: 24px;
-     background-color: var(--dark-30);
-     width: 80%;
-     border-radius: 16px;
 }
 
 .description-name {

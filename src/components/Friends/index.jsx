@@ -1,6 +1,8 @@
 import React from "react";
 
+import Card from "../Card";
 import './friends.css';
+
 import imgFernando from '../../img/amigos/fernando.png';
 import imgAna from '../../img/amigos/ana.png';
 import imgCarlos from '../../img/amigos/carlos.png';
@@ -13,7 +15,7 @@ import imgCarol from '../../img/amigos/carol.png';
 
 function Friends(){
     return(
-        <div className="friends">
+        <Card className="friends">
             <div className="friends-number">
                 <span className="friends-amount">Amigos (248)</span>
                 <span className="friends-all">Ver todos</span>
@@ -56,7 +58,7 @@ function Friends(){
                     <span className="friends-list_name">Carol</span>
                 </div>
             </section>
-        </div>
+        </Card>
 
     )
 }

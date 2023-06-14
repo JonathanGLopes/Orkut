@@ -1,10 +1,7 @@
 @import '../../App.css';
 
 .community {
-    width: 80%;
     height: 411px;
-    background-color: var(--dark-30);
-    border-radius: 16px;
     margin: 32px auto 32px auto;
     padding: 24px 27px;
 }
