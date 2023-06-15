@@ -1,7 +1,7 @@
 import React from "react";
 
 import Card from "../Card";
-import './sobre.css';
+import './description.css';
 
 import iconStar from '../../img/icones/Star.svg';
 import iconSmile from '../../img/icones/Smiley.svg';
@@ -10,7 +10,7 @@ import iconHeart from '../../img/icones/Heart.svg';
 
 export default function Description(){
     return(
-        <Card>
+        <Card className="description">
             <h2 className="description-name">Boa tarde, Jonathan Lopes</h2>
             <p className="description-text">Programar sem café é igual um poeta sem poesia.</p>
             <div className="description-status">
