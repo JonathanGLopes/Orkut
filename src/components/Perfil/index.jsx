@@ -1,7 +1,7 @@
 import React from "react";
 import './perfil.css';
 
-import imgPerfil from '../../img/icones/perfil.png';
+import imgPerfil from '../../img/icones/imgperfil.jpg';
 import Card from "../Card";
 
 function Perfil(){

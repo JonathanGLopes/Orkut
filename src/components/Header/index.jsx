@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../../objects/Logo";
 import './header.css';
 
-import imgPerfil from '../../img/icones/perfil.png';
+import imgPerfil from '../../img/icones/imgperfil.jpg';
 import arrowDown from '../../img/icones/CaretDown.svg';
 
 
