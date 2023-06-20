@@ -5,3 +5,10 @@
 
 ### Objetivo
 - Pratica no desenvolvimento de aplicações usando React JS.
+
+### Capturas de tela
+
+<img width="300" src="./src/img/demo/img1.png"> <br>
+<img width="300" src="./src/img/demo/img2.png"> <br>
+<img width="300" src="./src/img/demo/img3.png"> <br>
+<img width="300" src="./src/img/demo/img4.png">
