@@ -23,6 +23,10 @@ nav {
     cursor: pointer;
 }
 
+.header-perfil_name:hover, .header-perfil_icon:hover{
+    cursor: pointer;
+}
+
 li {
     list-style: none;
 }
