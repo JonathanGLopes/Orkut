@@ -13,8 +13,8 @@ function App() {
       <Header />
       <Perfil />
       <Edit />
-      <Friends />
       <Description />
+      <Friends />
       <Community />
     </>
   )
