@@ -1,5 +1,5 @@
 .description {
-     margin: 40px auto 0 auto;
+     margin: 90px auto 0 auto;
      padding: 24px;
 }
 
@@ -82,4 +82,24 @@
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
+}
+
+@media (min-width: 1200px){
+    .description {
+        margin-top: 0;
+        height: 54rem;
+    }
+
+    .description-status {
+        margin-top: 30px;
+    }
+
+    .description-info {
+        margin-top: 30px;
+        gap: 1.1rem;
+    }
+
+    .description-info_status span:nth-child(n+2){
+        display: block;
+    }
 }
