@@ -25,6 +25,8 @@
     width: 124px;
     height: 124px;
     border-radius: 50%;
+    border: 3px solid var(--primary);
+    padding: 1px;
 }
 
 .perfil-name {
@@ -37,4 +39,19 @@
     font-size: 18px;
     color: var(--dark-10);
     font-weight: 400;
+}
+
+@media (min-width: 1200px){
+    .perfil-card {
+        margin-top: 0;
+        width: 17.5rem !important;
+        height: 20.25rem;
+    }
+
+    .perfil-img {
+        width: 10.625rem;
+        height: 10.625rem;
+        border: 3px solid var(--primary);
+        padding: 2px;
+    }
 }

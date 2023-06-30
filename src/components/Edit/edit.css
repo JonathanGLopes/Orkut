@@ -1,11 +1,13 @@
 @import '../../App.css';
 
 .edit {
-    margin: 20px auto 0 auto;
+    margin-top: 20px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+    width: 100%;
 
 }
 
@@ -14,4 +16,10 @@
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
+}
+
+@media (min-width: 1200px){
+    .edit {
+        margin-top: 3rem;
+    }
 }
