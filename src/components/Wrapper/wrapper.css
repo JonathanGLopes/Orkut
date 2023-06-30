@@ -1,0 +1,8 @@
+@media (min-width: 1200px){
+    .wrapper {
+        width: 1300px;
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        margin: 5rem auto 4rem auto;
+    }
+}
