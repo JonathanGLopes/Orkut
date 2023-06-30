@@ -49,3 +49,20 @@
     font-weight: 400;
     color: var(--dark-10);
 }
+
+@media (min-width: 1200px){
+    .community {
+        margin: 37px 0;
+        width: 17.5rem;
+        padding: 24px 27px 24px 0;
+    }
+
+    .community-number {
+        padding-left: 1.5rem;
+    }
+
+    .community-list {
+        width: 17.5rem;
+       
+    }
+}
