@@ -8,7 +8,12 @@
 
 ### Capturas de tela
 
+### Mobile
+
 <img width="300" src="./src/img/demo/img1.png"> <br>
 <img width="300" src="./src/img/demo/img2.png"> <br>
 <img width="300" src="./src/img/demo/img3.png"> <br>
 <img width="300" src="./src/img/demo/img4.png">
+
+### Desktop
+<img width="800" src="./src/img/demo/desktop.png">
