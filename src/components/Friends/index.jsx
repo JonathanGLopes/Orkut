@@ -1,66 +1,60 @@
-import React from "react";
-
 import Card from "../Card";
-import './friends.css';
+import Person from "../Person";
+import "./friends.css";
 
-import imgFernando from '../../img/amigos/fernando.png';
-import imgAna from '../../img/amigos/ana.png';
-import imgCarlos from '../../img/amigos/carlos.png';
-import imgVitor from '../../img/amigos/vitor.png';
-import imgMatheus from '../../img/amigos/matheus.png';
-import imgRamos from '../../img/amigos/ramos.png';
-import imgEiji from '../../img/amigos/eiji.png';
-import imgJulia from '../../img/amigos/julia.png';
-import imgCarol from '../../img/amigos/carol.png';
+const friendsData = [
+  {
+    name: "Fernando",
+    img: "/src/img/amigos/Fernando.png",
+  },
+  {
+    name: "Ana",
+    img: "/src/img/amigos/Ana.png",
+  },
+  {
+    name: "Carlos",
+    img: "/src/img/amigos/Carlos.png",
+  },
+  {
+    name: "Vitor",
+    img: "/src/img/amigos/Vitor.png",
+  },
+  {
+    name: "Matheus",
+    img: "/src/img/amigos/Matheus.png",
+  },
+  {
+    name: "Ramos",
+    img: "/src/img/amigos/Ramos.png",
+  },
+  {
+    name: "Eiji",
+    img: "/src/img/amigos/Eiji.png",
+  },
+  {
+    name: "Julia",
+    img: "/src/img/amigos/Julia.png",
+  },
+  {
+    name: "Carol",
+    img: "/src/img/amigos/Carol.png",
+  },
+];
 
-function Friends(){
-    return(
-        <Card className="friends">
-            <div className="friends-number">
-                <span className="friends-amount">Amigos (248)</span>
-                <span className="friends-all">Ver todos</span>
-            </div>
-            <section className="friends-list">
-                <div className="friends-list_card">
-                    <img src={imgFernando} alt="" className="friends-list_img" />
-                    <span className="friends-list_name">Fernando</span>
-                </div>
-                <div className="friends-list_card">
-                    <img src={imgAna} alt="" className="friends-list_img" />
-                    <span className="friends-list_name">Ana</span>
-                </div>
-                <div className="friends-list_card">
-                    <img src={imgCarlos} alt="" className="friends-list_img" />
-                    <span className="friends-list_name">Carlos</span>
-                </div>
-                <div className="friends-list_card">
-                    <img src={imgVitor} alt="" className="friends-list_img" />
-                    <span className="friends-list_name">Vitor</span>
-                </div>
-                <div className="friends-list_card">
-                    <img src={imgMatheus} alt="" className="friends-list_img" />
-                    <span className="friends-list_name">Matheus</span>
-                </div>
-                <div className="friends-list_card">
-                    <img src={imgRamos} alt="" className="friends-list_img" />
-                    <span className="friends-list_name">Ramos</span>
-                </div>
-                <div className="friends-list_card">
-                    <img src={imgEiji} alt="" className="friends-list_img" />
-                    <span className="friends-list_name">Eiji</span>
-                </div>
-                <div className="friends-list_card">
-                    <img src={imgJulia} alt="" className="friends-list_img" />
-                    <span className="friends-list_name">Julia</span>
-                </div>
-                <div className="friends-list_card">
-                    <img src={imgCarol} alt="" className="friends-list_img" />
-                    <span className="friends-list_name">Carol</span>
-                </div>
-            </section>
-        </Card>
-
-    )
+function Friends() {
+  return (
+    <Card className="friends">
+      <div className="friends-number">
+        <span className="friends-amount">Amigos (248)</span>
+        <span className="friends-all">Ver todos</span>
+      </div>
+      <section className="friends-list">
+        {friendsData.map((friend) => (
+          <Person friendObj={friend} key={friend.name} />
+        ))}
+      </section>
+    </Card>
+  );
 }
 
 export default Friends;
