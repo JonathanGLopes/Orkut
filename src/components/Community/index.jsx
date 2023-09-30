@@ -1,65 +1,58 @@
-import React from "react";
-
 import Card from "../Card";
-import './community.css';
+import CommunityPage from "../CommunityPage";
+import "./community.css";
 
-import imgCar from '../../img/comunidade/car.png';
-import imgCartoon from '../../img/comunidade/cartoon.png';
-import imgCrazy from '../../img/comunidade/crazy.png';
-import imgSweet from '../../img/comunidade/sweet.png';
-import imgAnime from '../../img/comunidade/anime.png';
-import imgReading from '../../img/comunidade/reading.png';
-import imgEggs from '../../img/comunidade/eggs.png';
-import imgBooks from '../../img/comunidade/books.png';
-import imgCoffee from '../../img/comunidade/coffee.png';
+const pageObj = [
+  {
+    name: "Carros",
+    img: "/src/img/comunidade/car.png",
+  },
+  {
+    name: "Desenhos",
+    img: "/src/img/comunidade/cartoon.png",
+  },
+  {
+    name: "Crazy",
+    img: "/src/img/comunidade/coffee.png",
+  },
+  {
+    name: "Fofos",
+    img: "/src/img/comunidade/sweet.png",
+  },
+  {
+    name: "Animes",
+    img: "/src/img/comunidade/anime.png",
+  },
+  {
+    name: "Leitura",
+    img: "/src/img/comunidade/reading.png",
+  },
+  {
+    name: "Meu ovo",
+    img: "/src/img/comunidade/eggs.png",
+  },
+  {
+    name: "My Books",
+    img: "/src/img/comunidade/books.png",
+  },
+  {
+    name: "Cafeee",
+    img: "/src/img/comunidade/coffee.png",
+  },
+];
 
-
-export default function Community(){
-    return(
-        <Card className="community">
-            <div className="community-number">
-                <span className="community-amount">Comunidade (42)</span>
-                <span className="community-all">Ver todos</span>
-            </div>
-            <section className="community-list">
-                <div className="community-list_card">
-                    <img src={imgCar} alt="" className="community-list_img" />
-                    <span className="community-list_name">Carros</span>
-                </div>
-                <div className="community-list_card">
-                    <img src={imgCartoon} alt="" className="community-list_img" />
-                    <span className="community-list_name">Desenhos</span>
-                </div>
-                <div className="community-list_card">
-                    <img src={imgCrazy} alt="" className="community-list_img" />
-                    <span className="community-list_name">Crazy</span>
-                </div>
-                <div className="community-list_card">
-                    <img src={imgSweet} alt="" className="community-list_img" />
-                    <span className="community-list_name">Fofos</span>
-                </div>
-                <div className="community-list_card">
-                    <img src={imgAnime} alt="" className="community-list_img" />
-                    <span className="community-list_name">Animes</span>
-                </div>
-                <div className="community-list_card">
-                    <img src={imgReading} alt="" className="community-list_img" />
-                    <span className="community-list_name">Leitura</span>
-                </div>
-                <div className="community-list_card">
-                    <img src={imgEggs} alt="" className="community-list_img" />
-                    <span className="community-list_name">Meu ovo</span>
-                </div>
-                <div className="community-list_card">
-                    <img src={imgBooks} alt="" className="community-list_img" />
-                    <span className="community-list_name">My books</span>
-                </div>
-                <div className="community-list_card">
-                    <img src={imgCoffee} alt="" className="community-list_img" />
-                    <span className="community-list_name">Cafeee</span>
-                </div>
-            </section>
-        </Card>
-
-    )
+export default function Community() {
+  return (
+    <Card className="community">
+      <div className="community-number">
+        <span className="community-amount">Comunidade (42)</span>
+        <span className="community-all">Ver todos</span>
+      </div>
+      <section className="community-list">
+        {pageObj.map((page) => (
+          <CommunityPage pageObj={page} key={page.name} />
+        ))}
+      </section>
+    </Card>
+  );
 }
